@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css.css">
+  <title>Project Blog</title>
+</head>
+<body>
+  <!-- NAV BAR -->
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><img src="img/close_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tourist.html">Tourist</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="environment.html">Environment</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Jr's BLOG</a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="tourist.html">Tourist</a></li>
+      <li class="hideOnMobile"><a href="history.html">History</a></li>
+      <li class="hideOnMobile"><a href="environment.html">Environment</a></li>
+      <li class="menu" onclick=showSidebar()><a href="#"><img src="img/menu_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
+    </ul>
+  </nav>
+  <!-- SELECTION -->
+  <div class="container">
+    <div class="card">
+      <img src="img/10k.jpg">
+      <div class="content">
+        <h3>Tourist</h3>
+        <p>description</p>
+        <a href="tourist.html" class="slct">10k</a>
+        <a href="#" class="slct">Parola</a>
+        <a href="#" class="slct">Bantayan</a>
+        <a href="#" class="slct">Bakasihan</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/san roque church cordova.jpg">
+      <div class="content">
+        <h3>History</h3>
+        <p>description</p>
+        <a href="#" class="slct">10k</a>
+        <a href="#" class="slct">Parola</a>
+        <a href="#" class="slct">Bantayan</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/cclexsmpl.jpg">
+      <div class="content">
+        <h3>Environment</h3>
+        <p>description</p>
+        <a href="#" class="slct">10k</a>
+        <a href="#" class="slct">Parola</a>
+        <a href="#" class="slct">Bantayan</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // NAV BAR functns
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+    // CARDS functns
+  </script>
+</body>
+</html>
